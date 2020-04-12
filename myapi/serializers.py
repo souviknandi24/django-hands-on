@@ -1,4 +1,4 @@
 # serializers.py
-from .components.heroes import HeroSerializer
-from .components.todos import TodoSerializer
-from .components.tasks import TaskSerializer
+from .components.heroes.serializer import HeroSerializer
+from .components.todos.serializer import TodoSerializer
+from .components.tasks.serializer import TaskSerializer
