@@ -1,6 +1,7 @@
 from .serializer_unrelated import TodoSerializerUnrelated
 from ..tasks.serializer_unrelated import TaskSerializerUnrelated
 
+
 class TodoSerializer(TodoSerializerUnrelated):
     included_serializers = {
         'tasks': TaskSerializerUnrelated,
@@ -11,4 +12,3 @@ class TodoSerializer(TodoSerializerUnrelated):
 
     class JSONAPIMeta:
         select_related = ['tasks']
-
