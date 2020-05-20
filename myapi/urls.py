@@ -7,6 +7,9 @@ router = routers.DefaultRouter()
 router.register(r'heroes', views.HeroViewSet)
 router.register(r'todos', views.TodoViewSet)
 router.register(r'tasks', views.TaskViewSet)
+router.register(r'doctors', views.DoctorViewSet)
+router.register(r'patients', views.PatientViewSet)
+router.register(r'appointments', views.AppointmentViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
